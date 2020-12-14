@@ -11,7 +11,8 @@ body{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	min-width: 100vh;
+	min-height: 100vh;
+	width: 100vw;
 	padding: 42px 77px 46px;
 
 }
@@ -24,14 +25,137 @@ h1{
 }
 
 main{
+	width: 89.3vw;
 	display: flex;
 	align-items: flex-start;
+	justify-content: space-between;
+	margin-top: 171px;
 }
 
+a{
+	color: #ffffff;
+	text-decoration: none;
+	transition: 0.3s;
+}
 
+a:hover{
+	color: #828282;
+}
+
+.l-navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 89.3vw;
+}
+
+.l-navbar__logo{
+	font-family: "Crimson Pro";
+	font-weight: 200;
+	font-size: 14px;
+	line-height: 16px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 7px 0;
+	border: 1px solid #fff;
+	width: 102px;
+	height: 32px;
+}
+
+.l-navbar__links{
+	list-style-type: none;
+	display: flex;
+	width: 41.7%;
+	justify-content: space-between;
+}
+
+.link__item{
+	font-family: "Montserrat";
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 22px;
+}
+
+.link__item--bold{
+	font-weight: 700;
+}
+
+.item1__description{
+	font-family: "Montserrat";
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 29.26px;
+	max-width: 410px;
+	margin: 40px 0 48px;
+}
+
+.item1__read-more{
+	font-family: "Montserrat";
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 22px;
+}
+
+.item1__read-more-arrow{
+	margin-left: 15px;
+	position: relative;
+	vertical-align: middle;
+}
+
+.l-main-container__item2{
+	position: relative;
+	width: 737px;
+}
+
+.item2__image{
+	width: 100%;
+}
+
+.item2__profile{
+	background-color: #181719;
+	position: absolute;
+	width: 410px;
+	height: 189px;
+	bottom: -111px;
+	right: 32px;
+}
+
+.profile__image{
+	width: 50px;
+	border-radius: 100%;
+	float: left;
+	margin: 18px 19px 0 31px;
+}
+
+.profile__name{
+	font-family: "Montserrat";
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 17.07px;
+	margin: 18px 0 8px;
+	padding-top: 5px;
+}
+
+.profile__post{
+	color: #828282;
+	font-family: "Montserrat";
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 15px;
+	padding-bottom: 5px;
+}
+
+.profile__text{
+	font-family: "Lora";
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 30.72px;
+	max-width: 287px;
+	margin: 25px 0 0 26px;
+}
 
 .l-footer{
-	margin: 94px 0 0;
+	margin: 217px 0 0;
 }
 
 .l-footer__text{
