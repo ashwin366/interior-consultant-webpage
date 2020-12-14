@@ -39,7 +39,7 @@ a{
 }
 
 a:hover{
-	color: #828282;
+	color: #9e9e9e;
 }
 
 .l-navbar{
@@ -80,12 +80,42 @@ a:hover{
 	font-weight: 700;
 }
 
+.btn{
+	cursor: pointer;
+	border: none;
+	outline: none;
+	background-color: inherit;
+}
+
+.btn__icon{
+	color: #fff;
+	transition: 0.2s;
+}
+
+.btn__icon:hover{
+	transform: scale(1.2);
+}
+
+.btn__icon:active{
+	transform: scale(1.0);
+}
+
+.btn--hidden{
+	display: none;
+}
+
+
+
+.l-main-container__item1{
+	margin-right: 20px;
+}
+
 .item1__description{
 	font-family: "Montserrat";
 	font-size: 24px;
 	font-weight: 300;
 	line-height: 29.26px;
-	max-width: 410px;
+	width: 410px;
 	margin: 40px 0 48px;
 }
 
@@ -164,4 +194,34 @@ a:hover{
 	font-size: 14px;
 	font-weight: 600;
 	line-height: 17px;
+}
+
+@media (max-width:1000px) {
+	main{
+		margin-top: 100px;
+	}
+
+	.l-navbar__links{
+		width: 60%;
+	}
+	.l-main-container{
+		flex-direction: column;
+	}
+
+	.l-main-container__item1{
+		margin-bottom: 37px;
+	}
+
+	.item1__description{
+		margin: 25px 0;
+	}
+
+	.l-main-container__item2{
+		width: 100%;
+	}
+
+}
+
+@media (max-width:600px) {
+
 }
